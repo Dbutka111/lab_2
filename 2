@@ -1,0 +1,23 @@
+import string
+word = input("Enter a word:  ")
+word = word.lower()
+
+Alphabet=list(string.ascii_lowercase)
+res = []
+
+for i in range(0,26):
+    res.append(word.count(Alphabet[i]))
+
+for i in range (0,26):
+    if res[i] != 0:
+        print(str(Alphabet[i].upper()) + " " + str(res[i]))
+        
+       
+      
+  
+input_str = input("Enter a string: ")
+words = input_str.split()
+words.sort()
+print("The sorted words are:")
+for word in words:
+   print(word)
